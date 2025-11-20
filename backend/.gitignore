@@ -1,0 +1,47 @@
+# ==========================
+# 1. IDE & OS (개발 도구 설정 파일 무시)
+# ==========================
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+
+# ==========================
+# 2. Backend (Spring Boot & Gradle)
+# ==========================
+# 컴파일된 결과물 (가장 중요! 절대 올리면 안 됨)
+backend/build/
+backend/out/
+backend/bin/
+
+# Gradle 캐시
+backend/.gradle/
+
+# 환경 설정 파일 (비밀번호 들어있을 수 있음)
+backend/src/main/resources/application-secret.yml
+
+# 로그 파일
+*.log
+
+# ==========================
+# 3. Frontend (React & Node)
+# ==========================
+# 라이브러리 폴더 (가장 중요! 절대 올리면 안 됨)
+frontend/node_modules/
+
+# 빌드 결과물
+frontend/build/
+frontend/dist/
+
+# 환경 변수 파일
+frontend/.env
+frontend/.env.local
+frontend/npm-debug.log*
+frontend/yarn-error.log*
+
+# ==========================
+# 4. Docker & DB
+# ==========================
+# DB 데이터 볼륨 (로컬에 생성된 DB 데이터 무시)
+db_data/
